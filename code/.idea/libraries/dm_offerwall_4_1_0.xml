@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="dm_offerwall_4.1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/dm_offerwall_4.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

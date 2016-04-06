@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">真好赚</string>
+
+    <string name="str_main_make_money">赚钱</string>
+    <string name="str_main_user_center">我的</string>
+    <string name="str_user_center_today_money">今日收益(元宝)</string>
+    <string name="str_user_center_today_money_none">今日还未挣钱!</string>
+    <string name="str_user_center_balance_histroy">总共收益:</string>
+    <string name="str_user_center_balance">账户余额:</string>
+    <string name="str_user_center_withdraw">立即提现</string>
+    <string name="str_user_center_withdraw_record">提现记录</string>
+    <string name="str_user_center_recommend">精品推荐</string>
+    <string name="str_user_center_business_coopration">精品推荐</string>
+
+
+    <string name="str_task_1">元宝渠道一</string>
+    <string name="str_task_2">元宝渠道二</string>
+    <string name="str_task_3">元宝渠道三</string>
+    <string name="str_task_4">元宝渠道四</string>
+    <string name="str_task_5">签到</string>
+    <string name="str_task_6">分享</string>
+
+    <string name="str_task_1_desc">每天都有新任务</string>
+    <string name="str_task_2_desc">大量元宝等你来拿</string>
+    <string name="str_task_3_desc">玩游戏也能赚元宝</string>
+    <string name="str_task_4_desc">少年想要元宝吗</string>
+    <string name="str_task_5_desc">签到获取50元宝</string>
+    <string name="str_task_6_desc">分享获取100元宝</string>
+
+    <!-- public -->
+    <string name="str_quit_tip">再次点击退出应用</string>
+
+    <!-- umeng -->
+    <string name="online_config">在线参数</string>
+    <string name="make_crash">程序崩溃</string>
+    <string name="kv_event">多属性(K-V)事件</string>
+    <string name="normal_event">普通事件</string>
+    <string name="event_begin">事件开始</string>
+    <string name="event_end">事件结束</string>
+    <string name="event_duration">数值型统计</string>
+    <string name="page_stack">统计 Fragment 页面(Stack)</string>
+    <string name="page_tabs"> 统计 Fragment 页面( Tab )</string>
+    <string name="social_analytics">社交统计</string>
+    <string name="js_in_webview">Webview 统计</string>
+    <string name="flush_cache">手动发送数据</string>
+    <string name="signin">用户登录</string>
+    <string name="signoff">用户退出</string>
+    <string name="webview_text">在webview中调用统计分析代码</string>
+</resources>

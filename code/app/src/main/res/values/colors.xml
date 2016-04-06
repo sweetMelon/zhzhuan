@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- 浅灰色背景色 -->
+    <color name="color_fafafa">#fafafa</color>
+    <!-- 浅灰色背景色 触发色 -->
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_f8f8f8">#f8f8f8</color>
+    <!-- 分割线 -->
+    <color name="color_9e9e9e">#9e9e9e</color>
+    <!-- 蓝色 主题色 -->
+    <color name="color_03a9f4">#03a9f4</color>
+    <!--红色文字 -->
+    <color name="color_e5ec23">#e51c23</color>
+    <!-- 深灰 -->
+    <color name="color_757575">#757575</color>
+    <!-- 灰色文字-->
+    <color name="color_555555">#555555</color>
+    <!--提现按钮 默认颜色 -->
+    <color name="color_b0bec5">#b0bec5</color>
+    <!--提现按钮 点击颜色 -->
+    <color name="color_90a4ae">#90a4ae</color>
+    <!--item 点击颜色 -->
+    <color name="color_e3e3e3">#e3e3e3</color>
+</resources>

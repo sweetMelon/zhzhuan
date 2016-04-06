@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/ft_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/la_bottom" >
+    </FrameLayout>
+
+    <com.tiangua.zhz.ui.view.views.ViewBottom
+        android:id="@+id/la_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_90"
+        android:layout_alignParentBottom="true" >
+    </com.tiangua.zhz.ui.view.views.ViewBottom>
+
+</RelativeLayout>

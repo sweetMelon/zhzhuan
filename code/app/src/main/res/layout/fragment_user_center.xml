@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/view_top"
+        layout="@layout/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_88" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_392"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_40"
+        android:paddingRight="@dimen/px_40">
+
+        <LinearLayout
+            android:id="@+id/la_user_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_126"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/px_72"
+                android:layout_height="@dimen/px_72"
+                android:src="@drawable/iv_user_avator" />
+
+            <TextView
+                android:id="@+id/tv_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_20"
+                android:text="uid:20160111"
+                android:textColor="@color/color_757575"
+                android:textSize="@dimen/px_text_30" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_user_today_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/la_user_icon"
+            android:text="@string/str_user_center_today_money"
+            android:textColor="@color/color_e5ec23"
+            android:textSize="@dimen/px_text_34"></TextView>
+
+        <TextView
+            android:id="@+id/tv_user_today_money_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_user_today_money"
+            android:layout_marginTop="@dimen/px_10"
+            android:text="@string/str_user_center_today_money_none"
+            android:textColor="@color/color_e5ec23"
+            android:textSize="@dimen/px_text_46"></TextView>
+
+        <View
+            android:id="@+id/view_divider"
+            style="@style/divider_style"
+            android:layout_below="@id/tv_user_today_money_value"
+            android:layout_marginTop="@dimen/px_10" />
+
+        <TextView
+            android:id="@+id/tv_user_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_divider"
+            android:layout_marginTop="@dimen/px_20"
+            android:text="@string/str_user_center_balance"
+            android:textColor="@color/color_555555"
+            android:textSize="@dimen/px_text_28" />
+
+        <TextView
+            android:id="@+id/tv_balance_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_user_balance"
+            android:layout_marginTop="@dimen/px_20"
+            android:text="@string/str_user_center_balance_histroy"
+            android:textColor="@color/color_555555"
+            android:textSize="@dimen/px_text_28" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_90"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/view_divider"
+            android:layout_marginTop="@dimen/px_20"
+            android:background="@drawable/btn_withdraw_selector"
+            android:paddingLeft="@dimen/px_10"
+            android:paddingRight="@dimen/px_10"
+            android:text="@string/str_user_center_withdraw"
+            android:textColor="@color/color_555555" />
+    </RelativeLayout>
+
+    <View
+        style="@style/divider_style"
+        android:layout_below="@id/tv_user_today_money_value"
+        android:layout_marginTop="@dimen/px_10" />
+
+    <RelativeLayout
+        android:id="@+id/ra_withdraw_record"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_112"
+        android:background="@drawable/selector_listview_item">
+
+        <ImageView
+            android:id="@+id/iv_withdraw_record"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_40"
+            android:src="@drawable/iv_withdraw_record" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_toRightOf="@id/iv_withdraw_record"
+            android:text="@string/str_user_center_withdraw_record"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px_text_28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_30"
+            android:src="@drawable/iv_right_arrow" />
+    </RelativeLayout>
+
+    <View style="@style/divider_style" />
+
+    <RelativeLayout
+        android:id="@+id/ra_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_112"
+        android:background="@drawable/selector_listview_item">
+
+        <ImageView
+            android:id="@+id/iv_recommend"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_40"
+            android:src="@drawable/iv_recommend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_toRightOf="@id/iv_recommend"
+            android:text="@string/str_user_center_recommend"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px_text_28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_30"
+            android:src="@drawable/iv_right_arrow" />
+    </RelativeLayout>
+
+    <View style="@style/divider_style" />
+
+    <RelativeLayout
+        android:id="@+id/ra_business_cooperation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_112"
+        android:background="@drawable/selector_listview_item">
+
+        <ImageView
+            android:id="@+id/iv_business_cooperation"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_40"
+            android:src="@drawable/iv_business_cooperation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_toRightOf="@id/iv_business_cooperation"
+            android:text="@string/str_user_center_business_coopration"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px_text_28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_30"
+            android:src="@drawable/iv_right_arrow" />
+    </RelativeLayout>
+    <View style="@style/divider_style" />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="divider_style">
+        <item name="android:background">@color/color_9e9e9e</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px_1</item>
+    </style>
+
+    <style name="tv_32px_ffffff">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/px_text_32</item>
+    </style>
+
+    <style name="tv_32px_03a9f4">
+        <item name="android:textColor">@color/color_03a9f4</item>
+        <item name="android:textSize">@dimen/px_text_32</item>
+    </style>
+
+    <style name="tv_30px_03a9f4">
+        <item name="android:textColor">@color/color_03a9f4</item>
+        <item name="android:textSize">@dimen/px_text_30</item>
+    </style>
+
+    <style name="tv_20px_03a9f4">
+        <item name="android:textColor">@color/color_03a9f4</item>
+        <item name="android:textSize">@dimen/px_text_20</item>
+    </style>
+
+    <style name="tv_20px_555555">
+        <item name="android:textColor">@color/color_555555</item>
+        <item name="android:textSize">@dimen/px_text_20</item>
+    </style>
+
+</resources>
