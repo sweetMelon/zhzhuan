@@ -57,7 +57,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void onResume() {
-        // TODO Auto-generated method stub
         super.onResume();
         MobclickAgent.onResume(this);
     }

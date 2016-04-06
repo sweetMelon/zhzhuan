@@ -51,8 +51,8 @@ public class UserInfoModel {
         userInfoModel.setAlipay(shared.getString(ALIPAY,""));
         userInfoModel.setPhone(shared.getString(PHONE,""));
         userInfoModel.setQq(shared.getString(QQ,""));
-        userInfoModel.setHistoryScore(context, getHistoryScore(context));
-        userInfoModel.setTodayScore(context, getTodayScore(context));
+        userInfoModel.setHistoryScore(context, userInfoModel.getHistoryScore(context));
+        userInfoModel.setTodayScore(context, userInfoModel.getTodayScore(context));
         return userInfoModel;
     }
 
@@ -96,7 +96,7 @@ public class UserInfoModel {
         this.score = score;
     }
 
-    public static int getTodayScore(Context context) {
+    public int getTodayScore(Context context) {
         int todayScores = 0;
         int lastSaveScoreDay = PreferenceUtil.getPreferenceUtil(context).getInt(DAY, 0);
         Calendar c = Calendar.getInstance();
@@ -127,11 +127,11 @@ public class UserInfoModel {
         PreferenceUtil.getPreferenceUtil(context).put(TODAY_SCORE, this.todayScore);
     }
 
-    public static int getHistoryScore(Context context) {
+    public int getHistoryScore(Context context) {
         return PreferenceUtil.getPreferenceUtil(context).getInt(HISTORY_SCORE, 0);
     }
 
-    public static void setHistoryScore(Context context, int lastScore) {
+    public void setHistoryScore(Context context, int lastScore) {
         PreferenceUtil.getPreferenceUtil(context).put(HISTORY_SCORE, lastScore);
     }
 
