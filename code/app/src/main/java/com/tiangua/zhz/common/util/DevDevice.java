@@ -97,7 +97,6 @@ public class DevDevice {
     public String getDeviceInfo(Context context) {
         String deviceInfo = null;
         JSONObject json = new JSONObject();
-        JSONObject jsonPhoneInfo = new JSONObject();
         try {
             json.put("osname", getOSVersionName());
             json.put("oscode", String.valueOf(getOSVersionCode()));
@@ -114,8 +113,7 @@ public class DevDevice {
             json.put("mac", getWlanMacAddress(context));
             json.put("ip", getLocalIpAddress());
             json.put("androidid", getAndroidID(context));
-            jsonPhoneInfo.put("md", json);
-            deviceInfo = jsonPhoneInfo.toString();
+            deviceInfo = json.toString();
         } catch (Exception e) {
             LogCat.e("DevDevice", e);
             deviceInfo = null;
@@ -313,7 +311,8 @@ public class DevDevice {
      * @param context 上下文
      * @return int 网络状态 {@link #NETWORKTYPE_2G},{@link #NETWORKTYPE_3G},          *{@link #NETWORKTYPE_INVALID},{@link #NETWORKTYPE_WAP}* <p>{@link #NETWORKTYPE_WIFI}
      */
-    public int getNetWorkType(Context context) {
+    public String getNetWorkType(Context context) {
+        String networkType = "";
         int mNetWorkType = 0;
         ConnectivityManager manager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = manager.getActiveNetworkInfo();
@@ -330,7 +329,28 @@ public class DevDevice {
         } else {
             mNetWorkType = NETWORKTYPE_INVALID;
         }
-        return mNetWorkType;
+        switch (mNetWorkType){
+            case NETWORKTYPE_WIFI:
+                networkType = "wifi";
+                break;
+
+            case NETWORKTYPE_2G:
+                networkType = "2g";
+                break;
+
+            case NETWORKTYPE_3G:
+                networkType = "3g";
+                break;
+
+            case NETWORKTYPE_WAP:
+                networkType = "wap";
+                break;
+
+            case NETWORKTYPE_INVALID:
+                networkType = "invalid";
+                break;
+        }
+        return networkType;
     }
     private static boolean isFastMobileNetwork(Context context) {
         TelephonyManager telephonyManager = (TelephonyManager)context.getSystemService(Context.TELEPHONY_SERVICE);

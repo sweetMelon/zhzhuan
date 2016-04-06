@@ -9,11 +9,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.chance.ads.AdRequest;
-import com.chance.ads.InterstitialAd;
-import com.chance.ads.OfferWallAd;
-import com.chance.exception.PBException;
-import com.chance.listener.AdListener;
 import com.tiangua.zhz.R;
 import com.tiangua.zhz.model.UserInfoModel;
 import com.umeng.analytics.MobclickAgent;
@@ -37,8 +32,6 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     private RelativeLayout ra_task_4;
     private RelativeLayout ra_task_5;
     private RelativeLayout ra_task_6;
-
-    InterstitialAd ad;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -77,7 +70,6 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        ad.destroy();
     }
 
     @Override
@@ -100,38 +92,8 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                 AppConnect.getInstance(getActivity()).showOffers(getActivity(), userId);
                 break;
             case R.id.ra_task_5:
-                // chance
-                try {
-                    ad = new InterstitialAd(getActivity());
-                    ad.setPlacementID("874473460o3q5ki");
-                    ad.setAdListener(new AdListener() {
-                        @Override
-                        public void onReceiveAd() {
-
-                        }
-
-                        @Override
-                        public void onFailedToReceiveAd(PBException e) {
-
-                        }
-
-                        @Override
-                        public void onPresentScreen() {
-
-                        }
-
-                        @Override
-                        public void onDismissScreen() {
-
-                        }
-                    });
-                    ad.showFloatView(getActivity());
-                } catch (PBException e) {
-                    e.printStackTrace();
-                }
                 break;
             case R.id.ra_task_6:
-
                 break;
         }
     }

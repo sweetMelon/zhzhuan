@@ -10,6 +10,7 @@ import com.umeng.analytics.MobclickAgent;
  * Created by adamFeng on 2016/1/11.
  */
 public class ZhApplication extends Application{
+    public static boolean isDebug = true;
     public static final String IMG_CACHE_FILE = Environment.getExternalStorageDirectory().getAbsolutePath() + "/syso/android/timg";
     @Override
     public void onCreate() {

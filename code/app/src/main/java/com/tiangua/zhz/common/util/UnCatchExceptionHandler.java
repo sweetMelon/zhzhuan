@@ -9,6 +9,8 @@ import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.tiangua.zhz.common.ZhApplication;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
@@ -77,6 +79,7 @@ public class UnCatchExceptionHandler implements UncaughtExceptionHandler {
 
     /**
      * 处理异常
+     *
      * @param ex
      * @return
      */
@@ -94,8 +97,13 @@ public class UnCatchExceptionHandler implements UncaughtExceptionHandler {
         }.start();
         //手机手机信息
         collectDeviceInfo(mContext);
-        //保存crash日志
-        saveCrashInfo2File(ex);
+
+        if (ZhApplication.isDebug) {
+            ex.printStackTrace();
+        } else {
+            //保存crash日志
+            saveCrashInfo2File(ex);
+        }
         return true;
     }
 
@@ -105,7 +113,7 @@ public class UnCatchExceptionHandler implements UncaughtExceptionHandler {
      * @param ctx
      */
     public void collectDeviceInfo(Context ctx) {
-        if(ctx == null)
+        if (ctx == null)
             return;
         try {
             PackageManager pm = ctx.getPackageManager();

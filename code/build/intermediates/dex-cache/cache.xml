@@ -1,3 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\libs\umeng-analytics-v5.6.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="76fed6d2233b958f0c1d589aa366785e0ab5c8f1">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\umeng-analytics-v5.6.4_68812336b8e2645cd68ad8d7b60f67bc18dfc2c2.jar" />
+    </item>
+    <item
+        jar="F:\android\adt\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1_f41ec9cfbb8d0795bbacc30863073125a17965ad.jar" />
+    </item>
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\libs\AppOffer_2.4.5.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="530e5f3dd748ee404a5858381c3d3c59b99229ce">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\AppOffer_2.4.5_0843b1c12f84fdc55046fb475df489f5c9dc62cd.jar" />
+    </item>
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.1.1_f4fba6f400751914c5a17ed43b3852f6d785fad7.jar" />
+    </item>
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1_ebc22437c56c23611f8d61da4319fe6af975b8cf.jar" />
+    </item>
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\libs\baidu_cuid.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="58de9ecfba229dbb2c3eb3f45dbe284ba58100ea">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\baidu_cuid_ecf392acf705fde13e6fce63d52602cd030896ed.jar" />
+    </item>
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\libs\zhenhaozz.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0abc700f0edda0b3d9360ebbd7b928c9b8e1c1c7">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\zhenhaozz_643b27ee386b4f91906c51d3e2f8a6e04fe7a2cd.jar" />
+    </item>
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\libs\baidu_appx_android_2.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fdf78377a8b54f9dd855a3d3374c7e99741935ee">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\baidu_appx_android_2.0.0_e6228412a8ea6cecd0513c514b91d9f45c865b00.jar" />
+    </item>
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\libs\YoumiSdk_v5.5.1_2015-12-28.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a6c86745baad618611b61117c7fc0ab84a44d28d">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\YoumiSdk_v5.5.1_2015-12-28_eb958a156ed9e29134ca5cd342585069763f4ecd.jar" />
+    </item>
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\libs\dm_offerwall_4.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ba66b9c5a4cefbbe553d6a51c3e1a1806be1566e">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\dm_offerwall_4.1.0_2040fbd450f9cddbca49faeec5640061aa188387.jar" />
+    </item>
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.1.1_67f0211425ea2813b64f51471e5733e6d39f99f1.jar" />
+    </item>
+    <item
+        jar="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\exploded-aar\code\volley\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f87e626eea978e6b212f3a6acc09d4e8b1b97852">
+        <dex dex="E:\BaiduYunDownload\zhzhuan\zhzhuan\code\app\build\intermediates\pre-dexed\debug\code-volley-unspecified_7f1c64f20ab34a95eaa03eeb81073a4fbb118bee.jar" />
+    </item>
+
+</items>
