@@ -27,6 +27,12 @@
     <string name="str_task_5_desc">签到获取50元宝</string>
     <string name="str_task_6_desc">分享获取100元宝</string>
 
+    <!-- ApplyCash -->
+    <string name="apply_cash">提现</string>
+    <string name="goods_alipay">支付宝提现</string>
+    <string name="goods_wechat">微信提现</string>
+    <string name="goods_phone">手机话费充值</string>
+    <string name="apply_cash_prompt">可提现元宝：%1$d\n1元宝 = 0.01人民币</string>
     <!-- public -->
     <string name="str_quit_tip">再次点击退出应用</string>
 

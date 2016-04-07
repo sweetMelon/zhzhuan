@@ -37,6 +37,8 @@ public class MainActivityPresenter implements IMainPresenter {
             userId = String.valueOf(UserInfoModel.getUser(context).getUid());
             initSdk(userId);
         }else {
+            //// TODO: 2016/4/7 测试服务器接口暂无，所以直接initSdk 
+            initSdk(userId);
             String md = DevDevice.getInstance().getDeviceInfo(context);
             InitRequest initRequest = new InitRequest(ServerApi.INIT, md, new InitResponse(context, new IRequestCallback(){
                 @Override
@@ -52,7 +54,7 @@ public class MainActivityPresenter implements IMainPresenter {
                 @Override
                 public void onError(PostResponse resp) {
                     if(resp != null && resp.getErrMsg() != null){
-                        LogCat.w("MainActivityPresenter", resp.getErrMsg());
+                        LogCat.e("MainActivityPresenter", resp.getErrMsg());
                     }
                 }
             }));

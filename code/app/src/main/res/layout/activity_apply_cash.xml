@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/view_top"
+        layout="@layout/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_88" />
+
+    <TextView
+        android:id="@+id/tv_apply_cash_prompt"
+        style="@style/tv_30px_555555"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_126"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2" />
+
+    <View
+        style="@style/divider_style"
+        android:layout_below="@id/tv_apply_cash_prompt"
+        android:layout_marginTop="@dimen/px_10" />
+
+    <RelativeLayout
+        android:id="@+id/ra_apply_cash_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_112"
+        android:background="@drawable/selector_listview_item">
+
+        <ImageView
+            android:id="@+id/iv_apply_cash_record_alipay"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_40"
+            android:src="@drawable/iv_withdraw_record" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_toRightOf="@id/iv_apply_cash_record_alipay"
+            android:text="@string/goods_alipay"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px_text_28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_30"
+            android:src="@drawable/iv_right_arrow" />
+    </RelativeLayout>
+
+    <View style="@style/divider_style" />
+
+    <RelativeLayout
+        android:id="@+id/ra_apply_cash_phone_charge"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_112"
+        android:background="@drawable/selector_listview_item">
+
+        <ImageView
+            android:id="@+id/iv_recommend"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_40"
+            android:src="@drawable/iv_recommend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_toRightOf="@id/iv_recommend"
+            android:text="@string/goods_phone"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px_text_28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_30"
+            android:src="@drawable/iv_right_arrow" />
+    </RelativeLayout>
+
+    <View style="@style/divider_style" />
+
+    <RelativeLayout
+        android:id="@+id/ra_apply_cash_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_112"
+        android:background="@drawable/selector_listview_item">
+
+        <ImageView
+            android:id="@+id/iv_business_cooperation"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_40"
+            android:src="@drawable/iv_business_cooperation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_30"
+            android:layout_toRightOf="@id/iv_business_cooperation"
+            android:text="@string/goods_wechat"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/px_text_28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_30"
+            android:src="@drawable/iv_right_arrow" />
+    </RelativeLayout>
+
+    <View style="@style/divider_style" />
+</LinearLayout>

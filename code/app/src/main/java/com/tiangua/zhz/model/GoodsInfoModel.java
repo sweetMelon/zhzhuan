@@ -5,6 +5,15 @@ package com.tiangua.zhz.model;
  * 提现商品
  */
 public class GoodsInfoModel {
+
+    public static final int GOODS_ALIPAY = 0;
+    public static final int GOODS_WECHAT = 1;
+    public static final int GOODS_PHONE_CHARGE = 2;
+
+    public static final int[] APPLY_CASH_PHONE_LIMIT = { 10, 30, 50, 100};
+    public static final int[] APPLY_CASH_ALIPAY_LIMIT = { 5, 10, 30, 50, 100};
+    public static final int[] APPLY_CASH_WECHAT_LIMIT = { 5, 10, 30, 50, 100};
+
     private int goodsId;
     private String goodsName;
     private int[] goodsScore;

@@ -24,6 +24,11 @@
         <item name="android:textSize">@dimen/px_text_32</item>
     </style>
 
+    <style name="tv_30px_555555">
+        <item name="android:textColor">@color/color_555555</item>
+        <item name="android:textSize">@dimen/px_text_30</item>
+    </style>
+
     <style name="tv_30px_03a9f4">
         <item name="android:textColor">@color/color_03a9f4</item>
         <item name="android:textSize">@dimen/px_text_30</item>

@@ -1,6 +1,7 @@
 package com.tiangua.zhz.ui.view.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.widget.RelativeLayout;
 
 import com.tiangua.zhz.R;
 import com.tiangua.zhz.ui.presenter.impl.UserCenterPresenter;
+import com.tiangua.zhz.ui.view.activity.ApplyCashActivity;
 import com.umeng.analytics.MobclickAgent;
 
 /**
@@ -74,6 +76,8 @@ public class UserCenterFragment extends Fragment implements View.OnClickListener
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btn_apply_cash:
+                Intent applyCashIntent = new Intent(getActivity(), ApplyCashActivity.class);
+                getActivity().startActivity(applyCashIntent);
                 break;
 
             case R.id.ra_apply_cash_record:

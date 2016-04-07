@@ -32,7 +32,7 @@ public class UserCenterPresenter implements IUserCenterPresenter {
                 TextView tv_user_balance = (TextView) rootView.findViewById(R.id.tv_user_balance);
                 TextView tv_user_history_balance = (TextView) rootView.findViewById(R.id.tv_balance_history);
 
-                tv_uid.setText(String.valueOf(user.getUid()));
+                tv_uid.setText("uid: "+String.valueOf(user.getUid()));
                 if(user.getTodayScore(context) > 0){
                     tv_today_money.setText(user.getTodayScore(context));
                 }
